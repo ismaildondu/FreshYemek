@@ -1,0 +1,219 @@
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+
+    gap: 2rem;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.hero {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FA0050;
+    text-align: center;
+    margin-top: 10rem;
+
+
+}
+
+.hero_title {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #000;
+    text-align: left;
+}
+
+.hero_title>span {
+    color: #FA0050;
+    font-weight: 500;
+}
+
+.hero_adress {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+
+
+}
+
+.hero_adress>.button_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+
+}
+
+.button_group a {
+    text-decoration: none;
+
+}
+
+.adress_group {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.adress_group>label {
+    position: absolute;
+    cursor: text;
+    transition: all 0.3s ease;
+    left: 1rem;
+    color: rgba(0, 0, 0, 0.541);
+    user-select: none;
+
+}
+
+.adress_group>input:valid+label {
+    font-size: 0.8rem;
+    color: #fa004f7e;
+    transform: translateY(-1.5rem);
+    padding: 0 0.2rem;
+    background-color: #fff;
+}
+
+.adress_group>input:valid {
+    color: rgba(0, 0, 0, 0.808);
+    border: 1px solid #fa004f7e;
+}
+
+.adress_group>input {
+    width: 500px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.541);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+
+.main_button {
+    background-color: #FA0050;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+
+    font-weight: 500;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_button:hover {
+    background-color: rgb(194, 4, 64);
+}
+
+
+.main_button_disable {
+    background-color: #FA0050;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+
+    font-size: 0.8rem;
+    white-space: nowrap;
+    font-weight: 500;
+    border: none;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.adress_search {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.adress_search {
+    background-color: #fff;
+
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.541);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.adress_search_item {
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.adress_search_item:hover {
+    background-color: #FA0050;
+    color: #fff;
+}
+
+.adress_search_loading {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    animation: spin 1s linear infinite;
+    height: 1.5rem;
+    stroke: #FA0050;
+}
+
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

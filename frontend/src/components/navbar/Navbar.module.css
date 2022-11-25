@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    z-index: 100;
+    font-family: 'Alata', sans-serif;
+    box-sizing: border-box;
+    height: 4.2rem;
+    position: sticky;
+    top: 0;
+}
+
+
+.navbar .logo a {
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FA0050
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar>.navbar_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar .nav_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.navbar_icon {
+    width: 1rem;
+    height: 1rem;
+    padding: 0.5rem;
+    fill: #FFF;
+    background-color: #FA0050;
+    ;
+    border-radius: 50%;
+}
+
+.navbar .nav_box {
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+.navbar>.navbar_links .divider {
+    min-width: 1px;
+    height: 1.5rem;
+    background-color: #000;
+    opacity: 0.1;
+
+}

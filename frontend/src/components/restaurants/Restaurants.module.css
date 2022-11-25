@@ -1,0 +1,62 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.container a {
+    text-decoration: none;
+    color: #000;
+}
+
+.restaurants_title {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+
+.restaurants_list_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.sliderItem:focus {
+    outline: none;
+}
+
+
+.loadres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+    animation: load infinite 1s linear;
+}
+
+@keyframes load {
+    0% {
+        opacity: 0.5;
+        font-size: 1rem;
+    }
+
+    50% {
+        opacity: 1;
+        font-size: 1.05rem;
+    }
+
+    100% {
+        opacity: 0.5;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,140 @@
+.container {
+    width: 300px;
+    height: 280px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+.container .imageBox {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.container .imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.container:hover .imageBox img {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+
+
+.container .imageBox .deliveryTime {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 0 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    gap: 0.2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
+}
+
+.info {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: -1rem;
+}
+
+.info .name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.nameCol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #333333;
+    font-weight: 600;
+
+}
+
+.rating .star {
+    color: #EA004B;
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+
+
+.ratingCount {
+
+    color: #333333;
+    font-weight: 300;
+}
+
+.categories {
+    font-size: 0.75rem;
+    color: #333333;
+    font-weight: 300;
+    margin-top: -2rem;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.minOrder {
+    font-weight: 600;
+    margin-top: -1.2rem;
+    display: flex;
+    gap: 0.2rem;
+    font-size: 0.90rem;
+    align-items: center;
+}
+
+.minOrder p:nth-of-type(2) {
+    font-weight: 300;
+    font-size: 0.85rem;
+}
+
+.deliveryCost {
+    font-weight: 600;
+
+    display: flex;
+    gap: 0.2rem;
+    font-size: 0.90rem;
+    align-items: center;
+}
+
+.deliveryCost .freedelivery {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #00795B;
+}
+
+.deliveryCost span {
+    color: #8b8b8b;
+    font-weight: 600;
+}
+
+.deliveryCost span:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: #8b8b8b;
+}
