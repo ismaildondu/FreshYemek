@@ -1,3 +1,5 @@
+I don't plan to continue because I didn't plan and I wrote bad code.
+
 # FreshYemek
 
 - MERN STACK YEMEKSEPETI MINI CLONE
